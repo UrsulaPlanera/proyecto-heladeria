@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--javascript-->
+    <script src="scripts/func.js"></script>
     <!--pagina de css-->
     <link rel="stylesheet" href="style/estilo-index.css">
     <!--iconos bootstrap-->
@@ -36,20 +38,20 @@
             <!--lista con paginas-->
             <ul class="nav_primero">
                 <li>
+                    <img src="imagenes/logo_helado.png" class="img_logo_principal" title="El Arte Helados">
+                </li>
+                <li>
                     <a href="index.html" class="nav_pagina">Inicio</a>
                 </li>
                 <li>
                     <a href="" class="nav_pagina">Pruductos</a>
                 </li>
                 <li>
-                    <a href="index.html#listasabores" class="nav_pagina">Sabores</a>
-                </li>
-                <li>
                     <a href="" class="nav_pagina">Empresa</a>
                 </li>
             </ul>
 
-            <ul></ul>
+            <ul class="navSpace"></ul>
             
             <!--lista iconos redes-->
             <ul class="nav_ultimo">
@@ -69,223 +71,111 @@
                     </a>
                 </li>
                 <li class="logo_persona" title="Ingresar">
-                    <a>
+                    <a href="login.html">
                         <i class="bi bi-person"></i>
                     </a>
                 </li>
-                <li>
-                    <img src="imagenes/logo_helado.png" class="img_logo_principal">
-                </li>
             </ul>
-        </div>
-
-        <!--presentacion pagina-->
-        <div class="presentacion">
-            <img src="imagenes/Vector 1helado.png" class="presentacion_imagen-helado">
-            <span class="presentacion_nombre_empresa">El Arte Helados</span>
-            <p class="presentacion_antiguedad">Haciendo los mejores helados desde 1973</p>
         </div>
     </header>
 
-    <!--carrusel-->
-    <section class="introduccion_empresa">
-        <p class="lema">"Siempre es momento"</p>
-        <div class="carrousel">
-            <div class="carrousel-contenedor">
-    
-                
-                    <!--imagenes-->
-                <div class="carrousel-elemento">
-                    <div>
-                        <img src="imagenes/carrousel/istockphoto-1030661702-612x612.jpg" class="carrousel-imagen" id="carrousel-imagen-1">
-                    </div>
-                    <div>
-                        <img src="imagenes/carrousel/istockphoto-1065498446-612x612.jpg" class="carrousel-imagen" id="carrousel-imagen-2">
-                    </div>
-                    <div>
-                        <img src="imagenes/carrousel/istockphoto-1327667870-612x612.jpg" class="carrousel-imagen" id="carrousel-imagen-3">
-                    </div>
-                    <div>
-                        <img src="imagenes/carrousel/istockphoto-1474093602-612x612.jpg" class="carrousel-imagen" id="carrousel-imagen-4">
-                    </div>
-                    <div>
-                        <img src="imagenes/carrousel/istockphoto-1368275836-612x612.jpg" class="carrousel-imagen" id="carrousel-imagen-5">
-                    </div>
-                    <div>
-                        <img src="imagenes/carrousel/istockphoto-867413576-612x612.jpg" class="carrousel-imagen" id="carrousel-imagen-6">
+    <article>
+
+        <!--presentacion pagina-->
+        <section class="presentacion">
+            <img src="imagenes/Vector 1helado.png" class="presentacion_imagen-helado">
+            <span class="presentacion_nombre_empresa">El Arte Helados</span>
+            <p class="presentacion_antiguedad">Haciendo los mejores helados desde 1973</p>
+        </section>
+
+        <!--carrusel-->
+        <section class="sectionCarrusel">
+            <section class="introduccion_empresa">
+                <p class="lema">"Sabores que congelan momentos felices"</p>
+                <div class="carrousel">
+                    <div class="carrousel-contenedor">
+            
+                        
+                            <!--imagenes-->
+                        <div class="carrousel-elemento">
+                            <div>
+                                <img src="imagenes/carrousel/istockphoto-1030661702-612x612.jpg" class="carrousel-imagen" id="carrousel-imagen-1">
+                            </div>
+                            <div>
+                                <img src="imagenes/carrousel/istockphoto-1065498446-612x612.jpg" class="carrousel-imagen" id="carrousel-imagen-2">
+                            </div>
+                            <div>
+                                <img src="imagenes/carrousel/istockphoto-1327667870-612x612.jpg" class="carrousel-imagen" id="carrousel-imagen-3">
+                            </div>
+                            <div>
+                                <img src="imagenes/carrousel/istockphoto-1474093602-612x612.jpg" class="carrousel-imagen" id="carrousel-imagen-4">
+                            </div>
+                            <div>
+                                <img src="imagenes/carrousel/istockphoto-1368275836-612x612.jpg" class="carrousel-imagen" id="carrousel-imagen-5">
+                            </div>
+                            <div>
+                                <img src="imagenes/carrousel/istockphoto-867413576-612x612.jpg" class="carrousel-imagen" id="carrousel-imagen-6">
+                            </div>
+                        </div>
+            
+                            <!-- circulos -->
+                        <div class="carrousel-nav">
+                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-1" onclick="changeImg1()"></i>
+                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-2" onclick="changeImg2()"></i>
+                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-3" onclick="changeImg3()"></i>
+                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-4" onclick="changeImg4()"></i>
+                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-5" onclick="changeImg5()"></i>
+                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-6" onclick="changeImg6()"></i>
+                        </div>
+            
                     </div>
                 </div>
-    
-                    <!-- circulos -->
-                <div class="carrousel-nav">
-                    <a href="#carrousel-imagen-1" class="carrousel-nav-circulo">
-                        <i class="bi bi-circle"></i>
-                    </a>
-                    <a href="#carrousel-imagen-2" class="carrousel-nav-circulo">
-                        <i class="bi bi-circle"></i>
-                    </a>
-                    <a href="#carrousel-imagen-3" class="carrousel-nav-circulo">
-                        <i class="bi bi-circle"></i>
-                    </a>
-                    <a href="#carrousel-imagen-4" class="carrousel-nav-circulo">
-                        <i class="bi bi-circle"></i>
-                    </a>
-                    <a href="#carrousel-imagen-5" class="carrousel-nav-circulo">
-                        <i class="bi bi-circle"></i>
-                    </a>
-                    <a href="#carrousel-imagen-6" class="carrousel-nav-circulo">
-                        <i class="bi bi-circle"></i>
-                    </a>
-                </div>
-    
+            </section>
+        </section>
+        
+        <section class="irPaginaEmpresa">
+            <p class="conocer-mas">¿Querés saber más sobre nuestra empresa y nuestro objetivo?</p>
+            <div class="lin_acceder">
+                <a href="empresa.html" class="lin_acceder-a">
+                    <span class="palabra_acceder">Conocer</span>
+                    <i class="bi bi-chevron-double-right"></i>
+                </a>
             </div>
-        </div>
-        <p class="conocer-mas">¿Querés saber más sobre nuestra empresa y nuestro objetivo?</p>
-        <div class="lin_acceder">
-            <a href="empresa.html" class="lin_acceder-a">
-                <span class="palabra_acceder">Conocer</span>
-                <i class="bi bi-chevron-double-right"></i>
-            </a>
-        </div>
-    </section>
+        </section>
 
-    <!--lista de sabores-->
-    <section class="sabores" id="listasabores">
-        <p class="nuestros_sabores">Nuestros Sabores</p>
-        <div class="lista_sabores">
-            <div class="listas_particulares">
-                <p class="listas">Cremas</p>
-                <ul>
-                    <li>Vainilla</li>
-                    <li>Crema Americana</li>
-                    <li>Crema Americana con Almendras</li>
-                    <li>Crema Oreo</li>
-                    <li>Baileys</li>
-                    <li>Crema Rusa</li>
-                    <li>Mascarpone</li>
-                    <li>Crema del cielo</li>
-                </ul>
-            </div>
-            <div class="listas_particulares">
-                <p class="listas">Dulce de Leche</p>
-                <ul>
-                    <li>Dulce de Leche</li>
-                    <li>Dulce de Leche Granizado</li>
-                    <li>Super Dulce de Leche</li>
-                    <li>Dulce de Leche con Almendras</li>
-                    <li>Dulce de Leche Della Nonna</li>
-                </ul>
-            </div>
-            <div class="listas_particulares">
-                <p class="listas">Chocolates</p>
-                <ul>
-                    <li>Chocolate</li>
-                    <li>Chocolate Suizo</li>
-                    <li>Chocolate Amargo</li>
-                    <li>Chocolate Blanco</li>
-                    <li>Chocolate con Almendras</li>
-                    <li>Chocolate Italiano</li>
-                    <li>Chocolate al Rhum</li>
-                </ul>
-            </div>
-            <div class="listas_particulares">
-                <p class="listas">Frutales</p>
-                <ul>
-                    <li>Frutilla al Agua</li>
-                    <li>Frambuesa</li>
-                    <li>Limon</li>
-                    <li>Maracuya</li>
-                    <li>Anana</li>
-                </ul>
-            </div>
-            <div class="listas_particulares">
-                <p class="listas">Especiales</p>
-                <ul>
-                    <li>Lemon Pie</li>
-                    <li>Tiramisu</li>
-                    <li>Chocotorta</li>
-                    <li>Ferrero Rocher</li>
-                    <li>Selva Negra</li>
-                    <li>Franui</li>
-                    <li>Kinotos al Whisky</li>
-                    <li>Sambayón</li>
-                    <li>Frutos Rojos</li>
-                </ul>
-            </div>
-            <div class="listas_particulares">
-                <p class="listas">Veganos</p>
-                <ul>
-                    <li>Limón</li>
-                    <li>Melón</li>
-                    <li>Banana Split</li>
-                    <li>Frambuesa</li>
-                    <li>Dulce de Leche Veggie</li>
-                    <li>Chocolate Veggie</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        <!--sabores-->
 
-    <!--registro-->
-    <section class="formulario">
-        <p>¿Deseas que te informemos de nuestras promos y novedades?</p>
-        <p class="formulario_registrate">Registrate</p>
-        <p>¡Es muy sencillo: completa los datos pedidos a continuación y listo!</p>
-        <div class="formulario_columnas">
-            <div class="formulario_completar">
-                    <form class="formulario_completar-casilla">
-                        <div class="formulario_completar-casilla1">
-                            <input type="text" required="" value="" placeholder="Nombre" title="Nombre">
-                            <input type="text" required="" value="" placeholder="Apellido" title="Apellido">
-                        </div>
-                        <div class="formulario_completar-casilla2">
-                            <input type="email" required="" value="" placeholder="E-mail" title="E-mail">
-                        </div>
-                        <div class="formulario_completar-casilla3">
-                            <input type="tel" required="" value="" placeholder="Teléfono" title="Telefóno">
-                        </div>
-                        <div class="formulario_completar-casilla4">
-                            <input type="text" required="" value="" placeholder="Dirección" title="Dirección">
-                        </div>
-                        <div class="formulario_completar-casilla5">
-                            <input type="password" required="" value="" placeholder="Contraseña" title="Definir contraseña">
-                            <input type="password" required="" value="" placeholder="Confirme su contraseña" title="Confirmar contraseña">
-                        </div>
-                        <div class="formulario_completar-casilla6">
-                            <input type="submit" class="enviar-registro" value="Registrarse" title="Registrarse">
-                        </div>
-                    </form>
-                <div class="formulario_completar-firma">
-                    <p class="formulario_completar-firma-text">El Arte Helados</p>
-                </div>
+        <!--registro-->
+        <section class="irRegistrarse">
+            <div class="irRegistrarseContainer">
+                <p class="irRegistrarseContainer1">¡Accedé a nuestra tienda y ofertas!</p>
+                <p class="irRegistrarseContainer2">Solo tienes que registrarte</p>
+                <p class="irRegistrarseContainer3" id="irRegistrarseContainer3" onclick="changeWindowToRegister();">Ir a registrarse</p>
             </div>
-            <div>
-                <img src="imagenes/mano-alto-angulo-que-sostiene-taza-helado.jpg" class="formulario_imagen-imagen">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!--pie de pagina-->
-    <section class="redes">
-        <p class="seguinos">Seguinos en nuestras redes</p>
-        <div class="redes-par">
-            <div>
-                <i class="bi bi-instagram">
-                    <a href="https://www.instagram.com/">@elarte_helados</a>
-                </i>
-            </div>
-            <div>
-                <i class="bi bi-facebook">
-                        <a href="https://www.facebook.com/">El Arte Helados</a>
-                </i>
-            </div>
-            <div>
-                    <i class="bi bi-tiktok">
-                        <a href="https://www.tiktok.com/">elartehelados</a>
+        <!--pie de pagina-->
+        <section class="redes">
+            <p class="seguinos">Seguinos en nuestras redes</p>
+            <div class="redes-par">
+                <div>
+                    <i class="bi bi-instagram">
+                        <a href="https://www.instagram.com/">@elarte_helados</a>
                     </i>
+                </div>
+                <div>
+                    <i class="bi bi-facebook">
+                            <a href="https://www.facebook.com/">El Arte Helados</a>
+                    </i>
+                </div>
+                <div>
+                        <i class="bi bi-tiktok">
+                            <a href="https://www.tiktok.com/">elartehelados</a>
+                        </i>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </article>
 
     <footer>
             <p>Practica Codo a Codo - Equipo 10</p>

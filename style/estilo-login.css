@@ -1,0 +1,278 @@
+/* correcciones generales. margenes, listas, fuente, otros */
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+i {
+    color: #fff;
+}
+
+
+/* nav */
+
+body {
+    background-image: url(../imagenes/fondo-letras.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+.presentacion {
+    background-color: #F4896B;
+    padding: 1em 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.presentacion .presentacionImagenHelado {
+    height: 2em;
+    color: #fff;
+    vertical-align: -0.4em;
+}
+
+.presentacion .presentacionNombreEmpresa {
+    font-family: 'Carattere', cursive;
+    font-size: 2em;
+}
+
+/* contenido pagina */
+
+section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* login */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+
+/* login */
+.container .containerLogin {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    backdrop-filter: blur(5px);
+    border-radius: 2rem;
+    box-shadow: 0 0 0.5rem 0 #c7c1c0;
+}
+
+.container .containerLogin .login {
+    display: grid;
+    grid-template-rows: 1fr repeat(5, auto);
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    row-gap: 1rem;
+    color: #F4896B;
+}
+
+.container .containerLogin .login form {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 0.5rem;
+}
+
+.container .containerLogin .login a {
+    color: #F4896B;
+}
+
+.container .containerLogin .login input {
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 0.1rem 0 #F4896B;
+    padding: 0.5rem 0;
+}
+
+.container .containerLogin .login .welcome {
+    font-family: 'Carattere', cursive;
+    font-size: 3rem;
+}
+
+.container .containerLogin .login form:last-child {
+    justify-self: center;
+    align-self: center;
+}
+
+.container .containerLogin .login .button-login {
+    background-color: #F4896B;
+    color: #fff;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.container .containerLogin .login .lineaHor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container .containerLogin .login .lineaHor .lineaHor1 {
+    border-top: solid;
+    border-width: thin;
+    border-color: #F4896B;
+}
+
+.container .containerLogin .login .irARegistrarse {
+    border-radius: 1rem;
+    box-shadow: 0 0 0.1rem 0 #F4896B;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .containerLogin .login .irARegistrarse:last-child {
+    cursor: pointer;
+}
+
+.container .containerLogin .imageRegistrarse {
+    /* los valores de border radius se aplican en orden
+    top left - top right - bottom right - bottom left*/
+    border-radius: 0 2rem 2rem 0;
+    display: flex;
+}
+
+/* cambio a registrarse */
+.container .containerLogin .login .irARegistrarse .irARegistrarsePalab {
+    font-weight: 800;
+}
+
+/* registrarse */
+
+.container .containerRegister {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    backdrop-filter: blur(5px);
+    border-radius: 2rem;
+    box-shadow: 0 0 0.5rem 0 #c7c1c0;
+}
+
+.container .containerRegister .register {
+    display: grid;
+    grid-template-rows: 1fr 4fr auto 1fr;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    row-gap: 1rem;
+    color: #F4896B;
+    justify-self: center;
+    align-self: center;
+}
+
+.container .containerRegister .imageRegistrarse {
+    /* los valores de border radius se aplican en orden
+    top left - top right - bottom right - bottom left*/
+    border-radius: 2rem 0 0 2rem;
+    display: flex;
+}
+
+.container .containerRegister .register a {
+    color: #F4896B;
+}
+
+.container .containerRegister .register input {
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 0.1rem 0 #F4896B;
+}
+
+.container .containerRegister .register .welcome {
+    font-family: 'Carattere', cursive;
+    font-size: 3rem;
+}
+
+
+/* estilo del formulario */
+
+.container .containerRegister .register .formulario_completar {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    grid-template-rows: 1fr;
+}
+
+.container .containerRegister .register .formulario_completar .formulario_completar-casilla {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 0.5rem;
+}
+
+.container .containerRegister .register .formulario_completar .formulario_completar-casilla input {
+    padding: 0.5rem;
+}
+
+.container .containerRegister .register .formulario_completar .formulario_completar-casilla .formulario_completar-casilla2, .formulario_completar-casilla3, .formulario_completar-casilla4 {
+    display: grid;
+}
+
+.container .containerRegister .register .formulario_completar .formulario_completar-casilla .formulario_completar-casilla6 input {
+    background-color: #F4896B;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* fin del formulario */
+
+.container .containerRegister .register .lineaHor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container .containerRegister .register .lineaHor .lineaHor1 {
+    border-top: solid;
+    border-width: thin;
+    border-color: #F4896B;
+}
+
+.container .containerRegister .register .irALogin {
+    border-radius: 1rem;
+    box-shadow: 0 0 0.1rem 0 #F4896B;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* cambio a login */
+.container .containerRegister .register .irALogin .irALoginPalab {
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.formulario .formulario_registrate {
+    font-family: 'Carattere', cursive;
+    font-size: 4em;
+    padding: 0.5em 0;
+}
+
+.container .containerRegister {
+    display: none;
+}
