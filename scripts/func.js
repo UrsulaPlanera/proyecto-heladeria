@@ -12,6 +12,7 @@ function changeToLogin(){
 
 function changeWindowToRegister(){
     window.location.href = "login.html";
+}
 
 function changeImg1(){
     document.getElementById("carrousel-imagen-1").style.display = 'flex';
