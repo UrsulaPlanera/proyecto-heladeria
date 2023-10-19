@@ -1,0 +1,242 @@
+/* correcciones generales. margenes, listas, fuente, otros */
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+i {
+    color: #fff;
+}
+
+/* nav */
+
+.nav {
+    background-color: #F4896B;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.nav .nav_primero , .nav_ultimo {
+    margin: 1em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+
+.nav .nav_primero {
+    column-gap: 1em;
+    display: flex;
+}
+
+.nav .nav_primero .nav_pagina:hover::after {
+    font-family:'Bootstrap-icons';
+    content: "\F22C";
+    padding: 0 0 0 0.2em;
+    vertical-align: -0.2em;
+}
+
+.nav .nav_ultimo {
+    justify-items: right;
+}
+
+.nav .nav_ultimo i {
+    cursor: pointer;
+}
+
+.nav .nav_ultimo .img_logo_principal {
+    height: 2em;
+}
+
+.nav .nav_ultimo .logo_persona:hover::after {
+    font-family:'Bootstrap-icons';
+    content: "\F138";
+    padding: 0 0 0 0.2em;
+    vertical-align: -0.2em;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* presentacion pagina */
+
+.presentacion {
+    text-align: center;
+    margin: 10em 0;
+}
+
+.presentacion .presentacion_imagen-helado {
+    height: 7em;
+    padding: 1em;
+    vertical-align: -2em;
+}
+
+.presentacion .presentacion_nombre_empresa {
+    font-family: 'Carattere', cursive;
+    font-size: 7em;
+    color: #04C4D9;
+}
+
+.presentacion .presentacion_antiguedad {
+    font-size: 2em;
+    letter-spacing: 0.5em;
+}
+
+/* introduccion empresa */
+.introduccion_empresa {
+    background-color: #F4896B;
+    text-align: center;
+    padding: 2em 0;
+    margin: 0;
+    color: #fff;
+    font-size: 2em;
+    width: 100%;
+}
+
+.introduccion_empresa .lema {
+    font-family: 'Carattere', cursive;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    padding: 0.5em;
+}
+
+.introduccion_empresa .conocer-mas {
+    padding: 1em;
+}
+
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* presentacion pagina */
+
+.presentacion {
+    text-align: center;
+    margin: 10em 0;
+}
+
+.presentacion .presentacion_imagen-helado {
+    height: 7em;
+    padding: 1em;
+    vertical-align: -2em;
+}
+
+.presentacion .presentacion_nombre_empresa {
+    font-family: 'Carattere', cursive;
+    font-size: 7em;
+    color: #04C4D9;
+}
+
+.presentacion .presentacion_antiguedad {
+    font-size: 2em;
+    letter-spacing: 0.5em;
+}
+
+/* introduccion empresa */
+.introduccion_empresa {
+    background-color: #F4896B;
+    text-align: center;
+    padding: 2em 0;
+    margin: 0;
+    color: #fff;
+    font-size: 2em;
+    width: 100%;
+}
+
+.introduccion_empresa .lema {
+    font-family: 'Carattere', cursive;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    padding: 0.5em;
+}
+
+.introduccion_empresa .conocer-mas {
+    padding: 1em;
+}
+
+.titulo {
+    font-family: 'Carattere', cursive;
+    letter-spacing: 0.2em;
+    padding: 0.5em;
+    display: flex;
+}
+
+.container {
+    background-color: #F4896B;
+    color: #ffffff;
+    font-family: 'Carattere', cursive;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    padding: 0.5em;
+}
+
+
+
+/* pie de pagina */
+
+.seguinos {
+    color: #04C4D9;
+    font-weight: 800;
+    letter-spacing: 0.5em;
+}
+
+.redes {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    text-align: center;
+    margin: 5em 0;
+    gap: 4em 0;
+    font-size: 1.5em;
+}
+
+.redes-par {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em 1em;
+    margin: 1em 2em;
+}
+
+.redes-par div {
+    background-color: #04C4D9;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #F4896B;
+    padding: 1em;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    color: #fff;
+}
