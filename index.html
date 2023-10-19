@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--javascript-->
-    <script src="scripts/func.js"></script>
+    <script src="scripts/funcIndex.js"></script>
     <!--pagina de css-->
     <link rel="stylesheet" href="style/estilo-index.css">
     <!--iconos bootstrap-->
@@ -44,7 +44,7 @@
                     <a href="index.html" class="nav_pagina">Inicio</a>
                 </li>
                 <li>
-                    <a href="" class="nav_pagina">Pruductos</a>
+                    <a href="pages/products.html" class="nav_pagina">Pruductos</a>
                 </li>
                 <li>
                     <a href="" class="nav_pagina">Empresa</a>
@@ -71,7 +71,7 @@
                     </a>
                 </li>
                 <li class="logo_persona" title="Ingresar">
-                    <a href="login.html">
+                    <a href="pages/login.html">
                         <i class="bi bi-person"></i>
                     </a>
                 </li>
@@ -120,65 +120,103 @@
             
                             <!-- circulos -->
                         <div class="carrousel-nav">
-                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-1" onclick="changeImg1()"></i>
-                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-2" onclick="changeImg2()"></i>
-                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-3" onclick="changeImg3()"></i>
-                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-4" onclick="changeImg4()"></i>
-                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-5" onclick="changeImg5()"></i>
-                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-6" onclick="changeImg6()"></i>
+                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-1"></i>
+                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-2"></i>
+                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-3"></i>
+                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-4"></i>
+                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-5"></i>
+                                <i class="bi bi-circle" class="carrousel-nav-circulo" id="carrousel-nav-circulo-6"></i>
                         </div>
-            
                     </div>
                 </div>
             </section>
         </section>
         
-        <section class="irPaginaEmpresa">
-            <p class="conocer-mas">¿Querés saber más sobre nuestra empresa y nuestro objetivo?</p>
-            <div class="lin_acceder">
-                <a href="empresa.html" class="lin_acceder-a">
-                    <span class="palabra_acceder">Conocer</span>
-                    <i class="bi bi-chevron-double-right"></i>
-                </a>
-            </div>
-        </section>
-
-        <!--sabores-->
-
-        <!--registro-->
-        <section class="irRegistrarse">
-            <div class="irRegistrarseContainer">
-                <p class="irRegistrarseContainer1">¡Accedé a nuestra tienda y ofertas!</p>
-                <p class="irRegistrarseContainer2">Solo tienes que registrarte</p>
-                <p class="irRegistrarseContainer3" id="irRegistrarseContainer3" onclick="changeWindowToRegister();">Ir a registrarse</p>
-            </div>
-        </section>
-
-        <!--pie de pagina-->
-        <section class="redes">
-            <p class="seguinos">Seguinos en nuestras redes</p>
-            <div class="redes-par">
+        <article class="infContainer">
+            <section class="irPaginaEmpresa elementInformation">
                 <div>
-                    <i class="bi bi-instagram">
-                        <a href="https://www.instagram.com/">@elarte_helados</a>
-                    </i>
+                    <p class="conocer-mas">¿Querés saber más sobre nuestra empresa y nuestro objetivo?</p>
                 </div>
                 <div>
-                    <i class="bi bi-facebook">
-                            <a href="https://www.facebook.com/">El Arte Helados</a>
-                    </i>
+                    <a href="empresa.html" class="linAcceder">Conocer
+                        <i class="bi bi-arrow-right-circle"></i>
+                    </a>
                 </div>
+            </section>
+    
+            <!--sabores-->
+    
+            <!--registro-->
+            <section class="irRegistrarse elementInformation">
+                <div class="irRegistrarseContainer">
+                    <div>
+                        <p class="irRegistrarseContainer1">¡Accedé a nuestra tienda y ofertas!</p>
+                        <p class="irRegistrarseContainer2">Solo tienes que registrarte</p>
+                    </div>
+                    <div>
+                        <a href="pages/login.html" class="irRegistrarseContainer3" id="irRegistrarseContainer3">Ir a registrarse
+                            <i class="bi bi-arrow-right-circle"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="irProductos">
                 <div>
-                        <i class="bi bi-tiktok">
-                            <a href="https://www.tiktok.com/">elartehelados</a>
-                        </i>
+                    <p>¿Sabías que ofrecemos más que helados?</p>
+                    <p>¡Conoce todos nuestros productos!</p>
+                </div> 
+                <div>
+                    <a href="pages/products.html" class="irProductos-en">Productos
+                        <i class="bi bi-arrow-right-circle"></i>
+                    </a>
                 </div>
-            </div>
-        </section>
+            </section>
+        </article>
+        
+
     </article>
 
     <footer>
-            <p>Practica Codo a Codo - Equipo 10</p>
+        <div class="container_footer">
+            <div>
+               <h1 class="nombre_footer">El Arte Helados</h1><br><br>
+               <h3>Haciendo los mejores helados desde 1973</h3>
+            </div>
+            <div>
+               <h3>Contactos:</h3><br><br>
+                <p>011 4596 2356</p><br>
+                <p>elarte_helados@gmail.com</p>
+            </div>
+            <div>
+               <h3>Seguinos en nuestras redes:</h3><br><br>  
+               <ul class="redes_footer">
+                    <li>
+                        <a href="https://www.instagram.com/" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" title="Tiktok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </li>
+                    <li class="logo_persona" title="Ingresar">
+                        <a>
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </li>
+                </ul> 
+            </div>
+            <div>
+               <img src="./imagenes/qr.jpg" alt="" width="100" height="100">
+            </div>
+        </div>
     </footer>
   </body>
 </html>
