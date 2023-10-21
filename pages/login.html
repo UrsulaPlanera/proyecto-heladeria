@@ -6,8 +6,10 @@
     <title>Document</title>
     <!--pagina de css-->
     <link rel="stylesheet" href="../style/estilo-login.css">
+    <link rel="stylesheet" href="../style/estilo-general.css">
     <!--javascript-->
     <script src="../scripts/funcLogin.js"></script>
+    <script src="../scripts/funcGeneral.js"></script>
     <!--iconos bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <!--fuentes-->
@@ -15,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Cantarell&family=Carattere&family=Gruppo&family=Quattrocento+Sans&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
     <title>Ingresar</title>
-    <link rel="shortcut icon" href="imagenes/logo_helado_celeste.ico">
+    <link rel="shortcut icon" href="../imagenes/logo_helado_celeste.ico">
 </head>
 <body>
     
@@ -32,13 +34,83 @@
 
     <header>
         <!--Barra de menu-->
-        <section class="presentacion">
-            <a href="../index.html">
-                <img src="../imagenes/Vector 1helado-blanco.png" class="presentacionImagenHelado">
-                <span class="presentacionNombreEmpresa">El Arte Helados</span>
-            </a>
-         </section>
-    </header>
+        <header>
+            <!--Barra de menu-->
+            <div class="nav">
+                <!--lista con paginas-->
+                <ul class="navFirst">
+                    <li>
+                        <img src="../imagenes/logo_helado.png" class="imgLogMain" title="El Arte Helados">
+                    </li>
+                    <li>
+                        <a href="../index.html" class="navPage">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="products.html" class="navPage">Pruductos</a>
+                    </li>
+                    <li>
+                        <a href="empresa.html" class="navPage">Empresa</a>
+                    </li>
+                </ul>
+    
+                <ul class="navSpace"></ul>
+                
+                <!--lista iconos redes-->
+                <ul class="navLatest">
+                    <li>
+                        <a href="https://www.instagram.com/" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" title="Tiktok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </li>
+                    <li class="logPerson" title="Ingresar">
+                        <a href="login.html">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+    
+            <section class="navSmallPage">
+                <img src="../imagenes/logo_helado.png" class="imgLogMain" title="El Arte Helados">
+                <div class="navName">
+                    <a href="../index.html">
+                        <span class="navNamePres">El Arte Helados</span>
+                    </a>
+                </div>
+                <i class="bi bi-list" id="logMenu" onclick="expandMenu()"></i>
+                <i class="bi bi-x-lg" id="closeMenu" onclick="shutMenu()"></i>
+            </section>
+    
+            <section class="navSmallPageDeployMenu" id="menuSmall">
+                <ul>
+                    <li>
+                        <a href="../index.html" class="navSmallPageIndex">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="products.html" class="navSmallPageProducts">Pruductos</a>
+                    </li>
+                    <li>
+                        <a href="empresa.html" class="navSmallPageEnt">Empresa</a>
+                    </li>
+                    <li class="logPerson" title="navSmallPageLogin">
+                        <a href="login.html">
+                            <i class="bi bi-person"> Login</i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </header>
 
 
     
@@ -116,5 +188,47 @@
             </div>
         </section>
     </article>
+
+    <footer>
+        <div class="container_footer">
+            <div>
+               <h1 class="nombre_footer">El Arte Helados</h1><br><br>
+               <h3>Haciendo los mejores helados desde 1973</h3>
+            </div>
+            <div>
+               <h3>Contactos:</h3><br><br>
+                <p>011 4596 2356</p><br>
+                <p>elarte_helados@gmail.com</p>
+            </div>
+            <div>
+               <h3>Seguinos en nuestras redes:</h3><br><br>  
+               <ul class="redes_footer">
+                    <li>
+                        <a href="https://www.instagram.com/" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" title="Tiktok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </li>
+                    <li class="logo_persona" title="Ingresar">
+                        <a>
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </li>
+                </ul> 
+            </div>
+            <div>
+               <img src="../imagenes/qr.jpg" alt="" width="100" height="100">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

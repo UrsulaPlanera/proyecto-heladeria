@@ -1,27 +1,3 @@
-/* correcciones generales. margenes, listas, fuente, otros */
-* {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-li {
-    list-style: none;
-}
-
-ul {
-    padding-left: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-
-i {
-    color: #fff;
-}
-
 
 /* nav */
 
@@ -32,24 +8,6 @@ body {
     background-clip: border-box;
 }
 
-.presentacion {
-    background-color: #F4896B;
-    padding: 1em 0;
-    color: #fff;
-    text-align: center;
-    width: 100%;
-}
-
-.presentacion .presentacionImagenHelado {
-    height: 2em;
-    color: #fff;
-    vertical-align: -0.4em;
-}
-
-.presentacion .presentacionNombreEmpresa {
-    font-family: 'Carattere', cursive;
-    font-size: 2em;
-}
 
 /* contenido pagina */
 

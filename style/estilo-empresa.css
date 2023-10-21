@@ -1,0 +1,176 @@
+
+/* presentacion pagina */
+
+.presentacion {
+    text-align: center;
+    margin: 15% 0;
+}
+
+.presentacion .presentacion_imagen-helado {
+    height: 7rem;
+    padding: 1em;
+    vertical-align: -2rem;
+}
+
+.presentacion .presentacion_nombre_empresa {
+    font-family: 'Carattere', cursive;
+    font-size: 7rem;
+    color: #04C4D9;
+}
+
+.presentacion .presentacion_antiguedad {
+    font-size: 2em;
+    letter-spacing: 0.5em;
+}
+
+/* cuerpo de pagina */
+
+h2 {
+    font-size: 4rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+article {
+    display: grid;
+}
+
+
+.container {
+    margin: 3rem 0;
+    max-width: 80%;
+    padding: 4rem;
+    border-radius: 2rem;
+    box-shadow:  0px 17px 62px -19px rgba(0,0,0,0.44);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4896B;
+    color: #ffffff;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+.container .containerSucursal {
+    padding: 2rem 0;
+}
+
+.container .containerSucursal .containerSucursalLugar{
+    font-size: 2rem;
+}
+
+.titulo {
+    font-family: 'Carattere', cursive;
+    letter-spacing: 0.2rem;
+    display: flex;
+    padding: 1rem 0;
+}
+
+.container li {
+    padding: 2rem 0;
+}
+
+iframe {
+    max-height: 20%;
+    border-radius: 2rem;
+    border-style: none;
+}
+
+.container .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* adaptar pantallas */
+
+@media (max-width: 1260px) {
+    .presentacion .presentacion_antiguedad {
+        font-size: 1.5rem;
+    }
+    .sectionCarrusel .introduccion_empresa .lema {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 1150px) {
+
+    .sectionCarrusel .introduccion_empresa .lema {
+        font-size: 4rem;
+    }
+}
+
+
+/* pantallas hasta 922pixeles */
+
+@media (max-width: 922px) {
+
+    .presentacion .presentacion_antiguedad {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    /* */
+    .presentacion .presentacion_nombre_empresa {
+        font-size: 5rem;
+    }
+
+    .presentacion .presentacion_imagen-helado {
+        height: 5rem;
+        padding: 1em;
+        vertical-align: -2rem;
+    }
+
+    .presentacion .presentacion_antiguedad {
+        font-size: 1rem;
+    }
+
+    /* cuerpo */
+    .container {
+        max-width: 100%;
+        border-radius: 0;
+    }
+    
+}
+
+@media (max-width: 480px){
+    /* */
+    .presentacion .presentacion_nombre_empresa {
+        font-size: 3rem;
+    }
+
+    .presentacion .presentacion_imagen-helado {
+        height: 3rem;
+        padding: 1em;
+        vertical-align: -1.5rem;
+    }
+
+    .presentacion .presentacion_antiguedad {
+        font-size: 0.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    p{
+        font: 0.5rem;
+    }
+
+}

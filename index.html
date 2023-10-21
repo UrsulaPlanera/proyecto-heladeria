@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--javascript-->
     <script src="scripts/funcIndex.js"></script>
+    <script src="scripts/funcGeneral.js"></script>
     <!--pagina de css-->
     <link rel="stylesheet" href="style/estilo-index.css">
+    <link rel="stylesheet" href="style/estilo-general.css">
     <!--iconos bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <!--fuentes-->
@@ -36,25 +38,25 @@
         <!--Barra de menu-->
         <div class="nav">
             <!--lista con paginas-->
-            <ul class="nav_primero">
+            <ul class="navFirst">
                 <li>
-                    <img src="imagenes/logo_helado.png" class="img_logo_principal" title="El Arte Helados">
+                    <img src="imagenes/logo_helado.png" class="imgLogMain" title="El Arte Helados">
                 </li>
                 <li>
-                    <a href="index.html" class="nav_pagina">Inicio</a>
+                    <a href="index.html" class="navPage">Inicio</a>
                 </li>
                 <li>
-                    <a href="pages/products.html" class="nav_pagina">Pruductos</a>
+                    <a href="pages/products.html" class="navPage">Pruductos</a>
                 </li>
                 <li>
-                    <a href="" class="nav_pagina">Empresa</a>
+                    <a href="pages/empresa.html" class="navPage">Empresa</a>
                 </li>
             </ul>
 
             <ul class="navSpace"></ul>
             
             <!--lista iconos redes-->
-            <ul class="nav_ultimo">
+            <ul class="navLatest">
                 <li>
                     <a href="https://www.instagram.com/" title="Instagram">
                         <i class="bi bi-instagram"></i>
@@ -70,14 +72,47 @@
                         <i class="bi bi-tiktok"></i>
                     </a>
                 </li>
-                <li class="logo_persona" title="Ingresar">
+                <li class="logPerson" title="Ingresar">
                     <a href="pages/login.html">
                         <i class="bi bi-person"></i>
                     </a>
                 </li>
             </ul>
         </div>
+
+
+        <section class="navSmallPage">
+            <img src="imagenes/logo_helado.png" class="imgLogMain" title="El Arte Helados">
+            <div class="navName">
+                <a href="index.html">
+                    <span class="navNamePres">El Arte Helados</span>
+                </a>
+            </div>
+            <i class="bi bi-list" id="logMenu" onclick="expandMenu()"></i>
+            <i class="bi bi-x-lg" id="closeMenu" onclick="shutMenu()"></i>
+        </section>
+
+        <section class="navSmallPageDeployMenu" id="menuSmall">
+            <ul>
+                <li>
+                    <a href="index.html" class="navSmallPageIndex">Inicio</a>
+                </li>
+                <li>
+                    <a href="pages/products.html" class="navSmallPageProducts">Pruductos</a>
+                </li>
+                <li>
+                    <a href="pages/empresa.html" class="navSmallPageEnt">Empresa</a>
+                </li>
+                <li class="logPerson" title="navSmallPageLogin">
+                    <a href="pages/login.html">
+                        <i class="bi bi-person"> Login</i>
+                    </a>
+                </li>
+            </ul>
+        </section>
     </header>
+
+    
 
     <article>
 
@@ -138,7 +173,7 @@
                     <p class="conocer-mas">¿Querés saber más sobre nuestra empresa y nuestro objetivo?</p>
                 </div>
                 <div>
-                    <a href="empresa.html" class="linAcceder">Conocer
+                    <a href="pages/empresa.html" class="linAcceder">Conocer
                         <i class="bi bi-arrow-right-circle"></i>
                     </a>
                 </div>
