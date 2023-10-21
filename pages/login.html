@@ -34,84 +34,81 @@
 
     <header>
         <!--Barra de menu-->
-        <header>
-            <!--Barra de menu-->
-            <div class="nav">
-                <!--lista con paginas-->
-                <ul class="navFirst">
-                    <li>
-                        <img src="../imagenes/logo_helado.png" class="imgLogMain" title="El Arte Helados">
-                    </li>
-                    <li>
-                        <a href="../index.html" class="navPage">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="products.html" class="navPage">Pruductos</a>
-                    </li>
-                    <li>
-                        <a href="empresa.html" class="navPage">Empresa</a>
-                    </li>
-                </ul>
-    
-                <ul class="navSpace"></ul>
-                
-                <!--lista iconos redes-->
-                <ul class="navLatest">
-                    <li>
-                        <a href="https://www.instagram.com/" title="Instagram">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/" title="Facebook">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.tiktok.com/" title="Tiktok">
-                            <i class="bi bi-tiktok"></i>
-                        </a>
-                    </li>
-                    <li class="logPerson" title="Ingresar">
-                        <a href="login.html">
-                            <i class="bi bi-person"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-    
-    
-            <section class="navSmallPage">
-                <img src="../imagenes/logo_helado.png" class="imgLogMain" title="El Arte Helados">
-                <div class="navName">
-                    <a href="../index.html">
-                        <span class="navNamePres">El Arte Helados</span>
-                    </a>
-                </div>
-                <i class="bi bi-list" id="logMenu" onclick="expandMenu()"></i>
-                <i class="bi bi-x-lg" id="closeMenu" onclick="shutMenu()"></i>
-            </section>
-    
-            <section class="navSmallPageDeployMenu" id="menuSmall">
-                <ul>
-                    <li>
-                        <a href="../index.html" class="navSmallPageIndex">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="products.html" class="navSmallPageProducts">Pruductos</a>
-                    </li>
-                    <li>
-                        <a href="empresa.html" class="navSmallPageEnt">Empresa</a>
-                    </li>
-                    <li class="logPerson" title="navSmallPageLogin">
-                        <a href="login.html">
-                            <i class="bi bi-person"> Login</i>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </header>
+        <div class="nav">
+            <!--lista con paginas-->
+            <ul class="navFirst">
+                <li>
+                    <img src="../imagenes/logo_helado.png" class="imgLogMain" title="El Arte Helados">
+                </li>
+                <li>
+                    <a href="../index.html" class="navPage">Inicio</a>
+                </li>
+                <li>
+                    <a href="products.html" class="navPage">Pruductos</a>
+                </li>
+                <li>
+                    <a href="empresa.html" class="navPage">Empresa</a>
+                </li>
+            </ul>
 
+            <ul class="navSpace"></ul>
+            
+            <!--lista iconos redes-->
+            <ul class="navLatest">
+                <li>
+                    <a href="https://www.instagram.com/" title="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" title="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/" title="Tiktok">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                </li>
+                <li class="logPerson" title="Ingresar">
+                    <a href="login.html">
+                        <i class="bi bi-person"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <section class="navSmallPage">
+            <img src="../imagenes/logo_helado.png" class="imgLogMain" title="El Arte Helados">
+            <div class="navName">
+                <a href="../index.html">
+                    <span class="navNamePres">El Arte Helados</span>
+                </a>
+            </div>
+            <i class="bi bi-list" id="logMenu" onclick="expandMenu()"></i>
+            <i class="bi bi-x-lg" id="closeMenu" onclick="shutMenu()"></i>
+        </section>
+
+        <section class="navSmallPageDeployMenu" id="menuSmall">
+            <ul>
+                <li>
+                    <a href="../index.html" class="navSmallPageIndex">Inicio</a>
+                </li>
+                <li>
+                    <a href="products.html" class="navSmallPageProducts">Pruductos</a>
+                </li>
+                <li>
+                    <a href="empresa.html" class="navSmallPageEnt">Empresa</a>
+                </li>
+                <li class="logPerson" title="navSmallPageLogin">
+                    <a href="login.html">
+                        <i class="bi bi-person"> Login</i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </header>
 
     
     <article class="container">
@@ -139,17 +136,13 @@
                     <p id="registrar" class="irARegistrarsePalab" onclick="changeToRegister();">Registrarse</p>
                 </div>
             </div>
-            <div>
-                <img src="../imagenes/mano-alto-angulo-que-sostiene-taza-helado.jpg" class="imageRegistrarse">
-            </div>
+            <div id="imageIceCream"></div>
         </section>
 
 
         <!--Registrarse-->
         <section class="containerRegister" id="containerRegister">
-            <div>
-                <img src="../imagenes/mano-alto-angulo-que-sostiene-taza-helado.jpg" class="imageRegistrarse">
-            </div>
+            <div id="imageIceCream"></div>
             <div class="register">
                 <p class="welcome">Registrarse</p>
                 <div class="formulario_completar">
