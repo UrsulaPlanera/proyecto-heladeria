@@ -77,6 +77,10 @@ i {
     display: none;
 }
 
+.navSmallPageDeployMenu {
+    display: none;
+}
+
 /* footer */
 
 footer {
@@ -149,10 +153,6 @@ footer .container_footer div {
     
     .navName .navNamePres {
         font-family: 'Carattere', cursive;
-    }
-
-    .navSmallPageDeployMenu {
-        display: none;
     }
 
     .navSmallPageDeployMenu {
