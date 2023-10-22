@@ -23,9 +23,27 @@
 
 <body>
     <header>
-        <img src="../imagenes/logo_helado.png" class="logoIceCream">
-        <p class="nameCompany">ElArte Helados</p>
-        <i class="bi bi-person-circle"></i>
+        <div class="navGeneralUser">
+            <img src="../imagenes/logo_helado.png" class="logoIceCream">
+            <a href="shop.html">
+                <p class="nameCompany">ElArte Helados</p>
+            </a>
+            <i class="bi bi-person-circle" id="logUser" onclick="expandMenu()"></i>
+            <i class="bi bi-x-lg" id="closeMenuUser" onclick="shutMenu()"></i>
+        </div>
+
+        <div id="navUser">
+            <a href="shop-user.html" class="navUserElement">
+                <p>Cuenta
+                    <i class="bi bi-file-person"></i>
+                </p>
+            </a>
+            <a href="../index.html" class="navUserElement">
+                <p class="navUserElement">Cerrar sesión
+                    <i class="bi bi-box-arrow-right"></i>
+                </p>
+            </a>
+        </div>
     </header>
 
     <!--contenido de la pagina-->

@@ -5,7 +5,7 @@ a {
 
 /* cabecera */
 
-header {
+.navGeneralUser {
     background-color: #04C4D9;
     color: #fff;
     display: flex;
@@ -15,14 +15,50 @@ header {
     font-size: 2rem;
 }
 
-.logoIceCream {
+.navGeneralUser .logoIceCream {
     height: 2rem;
 }
 
-.nameCompany {
+.navGeneralUser .nameCompany {
     font-family: 'Carattere', cursive;
     font-size: 2.5rem;
 }
+
+/* navegador de usuario */
+
+#logUser {
+    cursor: pointer;
+}
+
+#navUser, #closeMenuUser {
+    display: none;
+}
+
+#navUser {
+    position: fixed;
+    right: 0;
+    background-color: #04C4D9;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    width: 30%;
+    z-index: 1;
+    border-radius: 0 0 0 2rem;
+    box-shadow:  0px 17px 62px -19px rgba(0,0,0,0.44);
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.navUserElement {
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.navGeneralUser a {
+    color: #fff;
+}
+
 
 /* contenido general; nav y articulos */
 .containerShop {
@@ -36,7 +72,8 @@ header {
     align-self: center;
 }
 
-/* navegador */
+
+/* navegador de tienda */
 
 .containerShop .navShop {
     padding: 2rem;
@@ -121,8 +158,26 @@ header {
     border-radius: 3rem;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
     font-size: 2rem;
+    padding: 1rem;
+}
+
+.containerShop .budgetShop div {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerShop .budgetShop div:last-child{
+    text-align: center;
+    background-color: #04C4D9;
+    color: #fff;
+    #confirmShop {
+        color: #fff;
+    }
+    border-radius: 2rem;
+    display: block;
 }
 
 /* modificacion de footer */
@@ -227,16 +282,7 @@ footer {
         padding: 0.5rem 0;
     }
 
-    .containerShop .budgetShop div:last-child{
-        text-align: center;
-        background-color: #04C4D9;
-        color: #fff;
-        #confirmShop {
-            color: #fff;
-        }
-        border-radius: 2rem;
-        margin-top: 0.5rem;
-    }
+    
 }
 
 @media (max-width: 360px){
@@ -244,7 +290,12 @@ footer {
     header {
         justify-content: center;
     }
-    .logoIceCream, .bi.bi-person-circle {
+
+    .navGeneralUser .nameCompany {
+        font-size: 1.5rem;
+    }
+
+    .logoIceCream {
         display: none;
     }
 
@@ -269,5 +320,105 @@ footer {
 
     .containerShop .budgetShop{
         font-size: 1.5rem;
+    }
+}
+
+
+/* pagina usuario */
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.perfil .perfilImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #04C4D9;
+    border-radius: 3rem;
+    padding: 4rem 2rem;
+    color: #fff;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+.perfil .perfilCuerpo {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    padding: 2rem 0;
+    
+}
+
+.perfil .perfilCuerpo .perfilCuerpoNav {
+    background-color: #04C4D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 4rem 2rem;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+}
+
+.perfil .perfilCuerpo .perfilCuerpoNav li {
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.perfil .perfilCuerpo .perfilCuerpoDatos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+#perfilCuerpoDatos-2, #perfilCuerpoDatos-3 {
+    display: none;
+}
+
+@media (max-width: 780px){
+    .perfil .perfilCuerpo {
+        grid-template-columns: auto;
+        grid-template-rows: auto 1fr;
+    }
+
+    .perfil .perfilCuerpo .perfilCuerpoNav {
+        padding: 2rem;
+    }
+
+    .perfil .perfilCuerpo .perfilCuerpoNav li {
+        padding: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px){
+
+    .perfil {
+        margin: 1rem 0;
+    }
+
+    .perfil .perfilImg img {
+        height: 4rem;
+    }
+
+    .perfil .perfilCuerpo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .perfil .perfilCuerpo .perfilCuerpoDatos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        margin: 2rem 0;
     }
 }

@@ -190,6 +190,12 @@ footer .container_footer div {
     }
 }
 
-@media (max-width: 480){
-    
+@media (max-width: 280px){
+    .navSmallPage {
+        font-size: 1.5rem;
+    }
+
+    .navSmallPage .imgLogMain {
+        height: 1.5rem;
+    }
 }

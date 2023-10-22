@@ -15,6 +15,9 @@ section {
     display: flex;
     justify-content: center;
     align-content: center;
+    width: 70%;
+    height: 70%;
+    font-size: 1.2rem;
 }
 
 #imageIceCream {
@@ -71,12 +74,12 @@ section {
     border-radius: 1rem;
     border: none;
     box-shadow: 0 0 0.1rem 0 #F4896B;
-    padding: 0.5rem 0;
+    padding: 0.5rem;
 }
 
 .container .containerLogin .login .welcome {
     font-family: 'Carattere', cursive;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .container .containerLogin .login form:last-child {
@@ -247,6 +250,11 @@ section {
 }
 
 @media (max-width: 922px){
+
+    .container .containerLogin .login .welcome, .container .containerLogin .login .welcome {
+        font-family: 'Carattere', cursive;
+        font-size: 3rem;
+    }
     
     #containerLogin, #containerRegister{
         width: 100%;
@@ -270,7 +278,16 @@ section {
 
 }
 
-@media (max-width: 480px){
+@media (max-width: 780px){
+    section {
+        width: auto;
+        height: auto;
+    }
+
+    .container {
+        height: auto;
+    }
+    
     #imageIceCream {
         display: none;
     }
