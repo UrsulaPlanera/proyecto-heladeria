@@ -1,0 +1,273 @@
+
+a {
+    color: #000;
+}
+
+/* cabecera */
+
+header {
+    background-color: #04C4D9;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.logoIceCream {
+    height: 2rem;
+}
+
+.nameCompany {
+    font-family: 'Carattere', cursive;
+    font-size: 2.5rem;
+}
+
+/* contenido general; nav y articulos */
+.containerShop {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    padding: 2rem;
+    margin: 1rem;
+    min-height: 100vh;
+    justify-self: center;
+    align-self: center;
+}
+
+/* navegador */
+
+.containerShop .navShop {
+    padding: 2rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    border-color: #04C4D9;
+    border-style: solid;
+}
+
+.containerShop .navShop .navTitleShop{
+    font-size: 4rem;
+    font-family: 'Carattere', cursive;
+    color: #04C4D9;
+    font-weight: 600;
+}
+
+.containerShop .navShop ul {
+    padding: 2rem 0;
+}
+
+.containerShop .navShop li {
+    padding: 1rem 0;
+}
+
+
+/* elementos */
+
+.containerShop .shop {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    row-gap: 2rem;
+}
+
+.containerShop .shop .elementsClassShop {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* estilo contenidos de potes */
+.containerShop .shop .elementsClassShop .elementsClassShopContent {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.34);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 3rem;
+    max-height: 13rem;
+}
+
+.containerShop .shop .elementsClassShop .elementsClassShopContent .elementsClassShopContentVisual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.containerShop .shop .elementsClassShop .elementsClassShopContent .elementsClassShopContentVisual .imgShop {
+    height: 6rem;
+}
+
+.containerShop .shop .elementsClassShop .elementsClassShopContent .elementsClassShopContentPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.bi.bi-plus-circle, .bi.bi-dash-circle, #confirmShop {
+    color: #000;
+}
+
+.containerShop .budgetShop {
+    border-color: #04C4D9;
+    border-style: solid;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+/* modificacion de footer */
+footer {
+    background-color: #04C4D9 !important;
+}
+
+@media (max-width: 980px){
+
+    /* contenido general */
+    .containerShop {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 1fr;
+        row-gap: 2rem;
+        padding: 2rem;
+        margin: 1rem;
+        min-height: 100vh;
+    }
+
+    /* navedagor de productos */
+    .containerShop .navShop {
+        padding: 1rem;
+        justify-self: center;
+        align-self: center;
+    }
+
+    /* afecta la lista entera */
+    .containerShop .navShop ul {
+        padding: 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    /* afecta cada elemento de la lista */
+    .containerShop .navShop li {
+        margin: 0.5rem;
+        padding: 0.5rem;
+        text-align: center;
+        background-color: #04C4D9;
+        color: #fff;
+        border-radius: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    /* la distribucion de los elementos para comprar */
+
+    .containerShop .shop .elementsClassShop {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* tamaño de imagen de los elementos para comprar */
+    .containerShop .shop .elementsClassShop .elementsClassShopContent .elementsClassShopContentVisual .imgShop {
+        height: 8rem;
+    }
+}
+
+@media (max-width: 780px){
+
+    .containerShop {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    /* la distribucion de los elementos para comprar */
+    .containerShop .shop .elementsClassShop .elementsClassShopContent {
+        width: 100%;
+        max-height: max-content;
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    /* los botones de los elementos a comprar */
+    .containerShop .shop .elementsClassShop .elementsClassShopContent .elementsClassShopContentPrice {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px){
+
+    .containerShop .navShop {
+        margin: 0;
+        width: 100%;
+    }
+
+    .containerShop .navShop ul {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* cambia la forma de la seccion de total y pago */
+    .containerShop .budgetShop {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerShop .budgetShop div {
+        padding: 0.5rem 0;
+    }
+
+    .containerShop .budgetShop div:last-child{
+        text-align: center;
+        background-color: #04C4D9;
+        color: #fff;
+        #confirmShop {
+            color: #fff;
+        }
+        border-radius: 2rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 360px){
+    
+    header {
+        justify-content: center;
+    }
+    .logoIceCream, .bi.bi-person-circle {
+        display: none;
+    }
+
+    
+    /* tamaño de imagen de los elementos para comprar */
+
+    .containerShop .shop .elementsClassShop .elementsClassShopContent .elementsClassShopContentVisual .imgShop {
+        height: 4rem;
+    }
+
+    /* cambia disposicion de precios de los productos y opcion de agregar o sacar */
+    .containerShop .shop .elementsClassShop .elementsClassShopContent .elementsClassShopContentPrice{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerShop .navShop .navTitleShop{
+        font-size: 3rem;
+    }
+
+    .containerShop .budgetShop{
+        font-size: 1.5rem;
+    }
+}
